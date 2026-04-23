@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Déposer mes analyses | Bioptim</title>
+  <meta name="description" content="Dépôt des analyses biologiques sur Bioptim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand brand-link" href="index.html">
+        <img src="logo-bioptim.svg" alt="" width="54" height="54">
+        <div>
+          <div class="brand-name">Bioptim</div>
+          <div class="brand-subtitle">Comprendre ses analyses biologiques simplement</div>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a class="header-link" href="connexion.html">Mon compte</a>
+      </div>
+    </header>
+
+    <main class="panel upload-panel">
+      <p class="intro">Déposer mes analyses</p>
+      <h1 class="auth-title">Envoyez vos documents en toute simplicité</h1>
+      <p class="auth-text">Ajoutez votre bilan biologique et quelques informations utiles pour recevoir une interprétation écrite.</p>
+
+      <form class="upload-form">
+        <div class="upload-box">
+          <strong>Ajouter mes analyses</strong>
+          <span>PDF ou photo de vos résultats biologiques</span>
+          <a class="button button-light" href="#">Choisir un fichier</a>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            Âge
+            <input type="text" placeholder="Exemple : 58 ans">
+          </label>
+          <label>
+            Sexe
+            <select>
+              <option>Choisir</option>
+              <option>Femme</option>
+              <option>Homme</option>
+              <option>Autre</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Contexte ou symptômes
+          <textarea rows="5" placeholder="Décrivez en quelques mots votre situation ou les raisons de votre demande"></textarea>
+        </label>
+
+        <label>
+          Commentaire libre
+          <textarea rows="4" placeholder="Ajoutez toute information utile"></textarea>
+        </label>
+
+        <a class="button" href="index.html">Envoyer ma demande</a>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
