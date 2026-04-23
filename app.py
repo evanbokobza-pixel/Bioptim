@@ -1619,8 +1619,8 @@ class BioptimHandler(BaseHTTPRequestHandler):
 
 def run():
     init_db()
-    server = ThreadingHTTPServer(("127.0.0.1", APP_PORT), BioptimHandler)
-    print(f"Bioptim disponible sur http://127.0.0.1:{APP_PORT}")
+    server = ThreadingHTTPServer(("0.0.0.0", APP_PORT), BioptimHandler)
+    print(f"Bioptim disponible sur http://0.0.0.0:{APP_PORT}")
     print("Compte admin de demo : admin@bioptim.local / DemoAdmin123!")
     try:
         server.serve_forever()
